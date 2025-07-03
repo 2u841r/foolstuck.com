@@ -334,7 +334,7 @@ export default function FoolStuckWebsite() {
             Proudly serving the developer community since we figured out how to deploy a website
           </p>
           <div className="flex justify-center space-x-6 text-sm text-gray-400">
-            <span>© 2024 FoolStuck.com</span>
+            <span>© 2025 FoolStuck.com</span>
             <span>•</span>
             <span>Made with ❤️ by <a href="https://github.com/2u841r" className="text-orange-400 hover:text-orange-300">Zubair Ibn Zamir</a></span>
             <span>•</span>
