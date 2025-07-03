@@ -91,10 +91,11 @@ export default function FoolStuckWebsite() {
                 <p className="text-gray-600">Where developers get stuck on the simplest things</p>
               </div>
             </div>
-            <Badge variant="secondary" className="text-lg px-4 py-2">
-              <Bug className="w-4 h-4 mr-2" />
-              99.9% Uptime*
-              <span className="text-xs ml-1">*when not debugging</span>
+            <Badge variant="secondary" className="text-sm px-3 py-1 flex-shrink-0">
+              <Bug className="w-3 h-3 mr-1" />
+              <span className="hidden sm:inline">99.9% Uptime*</span>
+              <span className="sm:hidden">99.9%</span>
+              <span className="text-xs ml-1 hidden sm:inline">*when not debugging</span>
             </Badge>
           </div>
         </div>
@@ -263,7 +264,9 @@ export default function FoolStuckWebsite() {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center">
                       <span>Time Spent Debugging</span>
-                      <Badge variant="destructive">{Math.floor(progress / 10)} hours</Badge>
+                      <Badge variant="destructive" className="text-xs">
+                        {Math.floor(progress / 10)}h
+                      </Badge>
                     </div>
                     <Progress value={progress} className="h-4" />
                     <div className="grid grid-cols-2 gap-4 mt-6">
@@ -333,7 +336,7 @@ export default function FoolStuckWebsite() {
           <div className="flex justify-center space-x-6 text-sm text-gray-400">
             <span>© 2024 FoolStuck.com</span>
             <span>•</span>
-            <span>Made with ❤️ and lots of Stack Overflow</span>
+            <span>Made with ❤️ by <a href="https://github.com/2u841r" className="text-orange-400 hover:text-orange-300">Zubair Ibn Zamir</a></span>
             <span>•</span>
             <span>No rubber ducks were harmed</span>
           </div>
